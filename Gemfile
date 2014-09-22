@@ -44,6 +44,7 @@ group :development do
   #gem "pry-byebug"
   gem "quiet_assets"
   gem "annotate"
+  gem 'spring-commands-rspec'
 end
 
 group :test, :development do
@@ -51,6 +52,9 @@ group :test, :development do
   gem "rspec-rails"
   gem "capybara"
   gem 'sqlite3'
+  gem 'simplecov'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :production do
@@ -66,4 +70,4 @@ gem "bootstrap_form"
 gem "better_errors", group: :development
 gem "binding_of_caller", group: :development
 gem "httparty"
-gem 'thin'
+#gem 'thin'
